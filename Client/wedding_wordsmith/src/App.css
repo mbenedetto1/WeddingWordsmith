@@ -1,0 +1,70 @@
+* {
+    margin: auto;
+    padding: auto;
+    font-family: 'Roboto', sans-serif;
+    background: #ebbfcf
+}
+
+nav{
+    margin: auto;
+    padding: auto;
+}
+
+.dashboard1{
+    margin: auto;
+    padding: auto;
+}
+
+img{
+    margin-left: 1%;
+    max-width: 10%;
+    max-height: 15%;
+    
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: rgba(235, 198, 223, 0.984);
+    color:black;
+}
+
+.button{
+    align-self: center;
+    color:black;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: inline-block;
+    padding-top: 5%;
+    font-family:cursive;
+    font-size: 50px;
+}
+
+.trash{
+    max-width: 4%;
+    max-height: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.chat{
+    margin-top: 20vh;
+    margin-left: 75vh;
+}
+
+
+.chat-form{
+    margin: auto;
+    padding: auto;
+}
