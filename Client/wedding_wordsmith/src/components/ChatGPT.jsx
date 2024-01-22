@@ -33,9 +33,7 @@ const ChatGPT = () => {
         <button type='button' class="btn btn-light btn-lg mt-5" >
             <Link to='/save'>Save Speech</Link>
         </button>
-
         </div>
-
     </div>
 
     )
