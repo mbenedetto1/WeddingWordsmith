@@ -27,8 +27,13 @@ const ViewSpeech = () => {
 
             <p class="p-3">{speech.speechContent}</p>
         </div>
+        <div class="row justify-content-center m-5 p-5">
+            <Link to={`/edit/${id}`} class="btn btn-outline-primary">Edit</Link>
+            
+        </div>
     </div>
   )
+
 }
 
 export default ViewSpeech

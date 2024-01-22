@@ -8,6 +8,7 @@ import {Routes, Route} from 'react-router-dom'
 import About from './components/About'
 import ViewSpeech from './components/ViewSpeech'
 import SaveSpeech from './components/SaveSpeech'
+import EditSpeech from './components/EditSpeech'
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
           <Route path='/about' element= {<About/>}/>
           <Route path='/speech/:id' element= {<ViewSpeech/>}/>
           <Route path='/save' element= {<SaveSpeech/>}/>
+          <Route path='/edit/:id' element= {<EditSpeech/>}/>
 
         </Routes>
       </div>

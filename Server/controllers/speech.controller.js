@@ -29,4 +29,15 @@ module.exports = {
             .catch((err) => {console.log(err);
                 res.status(400).json(err)});
     },
+
+    // Update one saved speech
+    updateSpeech: (req, res) => {
+        Speech.findOneAndUpdate({_id:req.params._id}, req.body, {
+            runValidators: true,
+            new: true,
+        })
+            .then((updatedSpeech) => res.json(updatedSpeech))
+            .catch((err) => {console.log(err);
+                res.status(500).json(err)});
+    }
 }
