@@ -24,7 +24,6 @@ function App() {
           <Route path='/speech/:id' element= {<ViewSpeech/>}/>
           <Route path='/save' element= {<SaveSpeech/>}/>
           <Route path='/edit/:id' element= {<EditSpeech/>}/>
-
         </Routes>
       </div>
 

@@ -43,7 +43,7 @@ const EditSpeech = () => {
   return (
     <div>
         <div class="mt-5">
-            <h1 class="row justify-content-center" >Update your Speech!</h1>
+            <h1 class="row justify-content-center">Update your Speech!</h1>
         </div>
         <div class="row col-5 chat-form">
             <form class="form control form-control-lg" onSubmit={submitHandler}>

@@ -30,7 +30,7 @@ module.exports = {
                 res.status(400).json(err)});
     },
 
-    // Update one saved speech
+    // Update one saved speech!
     updateSpeech: (req, res) => {
         Speech.findOneAndUpdate({_id:req.params._id}, req.body, {
             runValidators: true,
