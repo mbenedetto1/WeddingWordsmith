@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-<div class="nav">
-    <nav class="navbar sticky navbar-light bg-transparent img-responsive">
-      <div>
+<div className='nav'>
+    <nav class="navbar sticky navbar-light bg-transparent">
+      <div className='image'>
       <Link to="/">
         <img src="src/assets/main.png"  />
       </Link>

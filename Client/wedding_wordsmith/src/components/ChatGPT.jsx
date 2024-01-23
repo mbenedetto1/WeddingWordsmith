@@ -27,7 +27,7 @@ const ChatGPT = () => {
             <input type="submit" class="btn btn-light btn-lg mt-5"value="Submit" />
         </form>
         <div class="text-center text-wrap">
-            <p >{response ? response : "I can help you write or edit your speech! Be sure to be as specific as possible!"}</p>
+            <span>{response ? response : "I can help you write or edit your speech! Be sure to be as specific as possible!"}</span>
         </div>
         <div class="row justify-content-center">
         <button type='button' class="btn btn-light btn-lg mt-5" >

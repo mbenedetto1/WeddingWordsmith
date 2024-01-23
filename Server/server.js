@@ -16,7 +16,7 @@ app.use(express.json(), express.urlencoded({ extended: true }));
 
 
 
-
+const API_KEY = "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"
 const openai = new OpenAIAPI({apiKey:"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" });
 
 app.use(bodyParser.json());
@@ -29,13 +29,50 @@ app.post('/chat', async (req, res) => {
         messages: [
             {role: 'system', content: 'Write the user a bespoke wedding speech or ceremony script based off of the details the user provides.  For ceremonies, inquire about the desired length from the user.'},
             {role: 'user', content: prompt}
+            
         ],
         
         
+        
     });
+
+
     
     res.send(completion.choices[0].message.content);
+
 });
+
+
+// app.post('/completions', async (req, res) => {
+//     const options = {
+//         method: 'POST',
+//         headers: {
+//             "Authorization" : `Bearer ${API_KEY}`,
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             model: "gpt-3.5-turbo-1106",
+//             messages: [{
+//                 "role": "user",
+//                 "content": req.body.message,
+//                 "role": "system",
+//                 "content": 'Write the user a bespoke wedding speech or ceremony script based off of the details the user provides.  For ceremonies, inquire about the desired length from the user.',
+                
+//             }],
+            
+//         })
+//     }
+//     try {
+//         const response = await fetch('https://api.openai.com/v1/chat/completions', options)
+//         const data = await response.json()
+//         res.send(data)
+//     } catch (error) {
+        
+//     }
+    
+// })
+
+
 
 
 

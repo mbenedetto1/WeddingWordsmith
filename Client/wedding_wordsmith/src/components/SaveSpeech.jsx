@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom'
 const SaveSpeech = () => {
     const navigate = useNavigate()
     const [speech, setSpeech] = useState({
-        speechName: '',
-        speechContent: ''
+        speechName: "",
+        speechContent: ""
     })
     const [errors, setErrors] = useState({})
 
@@ -19,15 +19,15 @@ const SaveSpeech = () => {
     const submitHandler = (e) => {
         e.preventDefault()
         axios.post('http://localhost:8000/api/speech', speech)
-        .then(res => {
-            console.log(res.data)
-            navigate(`/speech/${res.data._id}`)
+            .then(res => {
+                console.log(res.data)
+                navigate(`/speech/${res.data._id}`)
         })
         .catch(err => {
             console.log(err.response.data.errors)
             setErrors(err.response.data.errors)
         })
-        const [speeches, setSpeeches] = useState([])
+        
     }
 
     useEffect(() => {
@@ -61,7 +61,7 @@ const SaveSpeech = () => {
                         {errors.speechContent ? <p>{errors.speechContent.message}</p> : null}
                         
                     </div>
-                    <button type='submit'>Save your Speech</button>
+                    <input type='submit' value="Save Speech"/>
                 </form>
         </div>
     </div>

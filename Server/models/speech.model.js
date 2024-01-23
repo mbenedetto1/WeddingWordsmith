@@ -8,7 +8,7 @@ const SpeechSchema = new mongoose.Schema({
     },
     speechContent: {
         type: String,
-        required: [true, "Speech content is required"],
+        required: [true, "Speech content is required!"],
         minlength: [2, "Speech content must be at least 2 characters long"]
     }
 }, {timestamps: true});

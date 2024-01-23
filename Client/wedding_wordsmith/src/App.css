@@ -1,13 +1,21 @@
 * {
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
+
     font-family: 'Roboto', sans-serif;
     background: #ebbfcf
 }
 
+.root{
+    margin:0;
+    padding:0;
+}
+
+
 nav{
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
 }
 
 .dashboard1{
@@ -20,6 +28,10 @@ img{
     max-width: 10%;
     max-height: 15%;
     
+}
+
+.image{
+width: fit-content;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -79,4 +91,132 @@ img{
     font-size: 50px;
     justify-content: center;
     text-align: center;
+}
+
+
+
+
+/* Testing */
+
+
+
+
+
+.test{
+    background-color: #ebbfcf;
+    display: flex;
+}
+
+.side-bar{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 90vh;
+    width: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.main{
+    background-color: #ebbfcf;
+    margin: 0;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.info{
+    color: black;
+    font-size: 11px;
+    padding: 10px;
+}
+
+.test-button{
+    border: solid 0.5px black;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.test-nav{
+    padding: 10px;
+    margin: 10px;
+}
+
+.history{
+    
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+}
+
+.history li{
+    
+    list-style-type: none;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.bottom-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-container{
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+}
+
+input{
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#submit{
+    position: absolute;
+    right: 15px;
+    
+    cursor: pointer;
+}
+
+.feed{
+    overflow: scroll;
+    background-color: #ebbfcf;
+    width: 100%;
+    padding: 0;
+
+}
+
+.feed li{
+    display: flex;
+    
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+.feed p{
+    color : black;
+    font-size: 14px;
+    text-align: left;
+}
+
+.feed p.role{
+    min-width: 100px;
 }

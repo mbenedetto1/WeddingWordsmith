@@ -9,6 +9,7 @@ import About from './components/About'
 import ViewSpeech from './components/ViewSpeech'
 import SaveSpeech from './components/SaveSpeech'
 import EditSpeech from './components/EditSpeech'
+import TestChat from './components/TestChat'
 
 function App() {
   
@@ -24,6 +25,8 @@ function App() {
           <Route path='/speech/:id' element= {<ViewSpeech/>}/>
           <Route path='/speech/add' element= {<SaveSpeech/>}/>
           <Route path='/edit/:id' element= {<EditSpeech/>}/>
+          <Route path='/test' element= {<TestChat/>}/>
+          
         </Routes>
       </div>
 
