@@ -17,7 +17,7 @@ app.use(express.json(), express.urlencoded({ extended: true }));
 
 
 
-const openai = new OpenAIAPI({apiKey:"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" });
+const openai = new OpenAIAPI({apiKey:"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" });
 
 app.use(bodyParser.json());
 app.use(cors({ origin: 'http://localhost:5173'}));
@@ -31,10 +31,13 @@ app.post('/chat', async (req, res) => {
             {role: 'user', content: prompt}
         ],
         
+        
     });
     
     res.send(completion.choices[0].message.content);
 });
+
+
 
 const routes = require('./routes/speech.routes')(app);
 

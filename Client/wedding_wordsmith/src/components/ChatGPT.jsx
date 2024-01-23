@@ -31,7 +31,7 @@ const ChatGPT = () => {
         </div>
         <div class="row justify-content-center">
         <button type='button' class="btn btn-light btn-lg mt-5" >
-            <Link to='/save'>Save Speech</Link>
+            <Link to='/speech/add'>Save Speech</Link>
         </button>
         </div>
     </div>

@@ -50,13 +50,13 @@ const EditSpeech = () => {
             <label for="speechName">Speech Name:</label>
                 <div>
                     <input type="text" name="speechName" value={speech.speechName} onChange={changeHandler}/>
-                    <p>{errors.speechName ? errors.speechName.message : ''}</p>
+                    <p>{errors.speechName ? errors.speechName.message : null}</p>
                 </div>
                 <label for="speechContent">Speech:</label>
                 <div>
                     
                     <textarea rows='5' cols='33' name="speechContent" value={speech.speechContent} onChange={changeHandler}/>
-                    <p>{errors.speechContent ? errors.speechContent.message : ''}</p>
+                    <p>{errors.speechContent ? errors.speechContent.message : null}</p>
                     
                 </div>
                 <input type="submit" value="Update Speech"/>

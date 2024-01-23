@@ -50,8 +50,11 @@ const Dashboard = () => {
         <div >
             <div class="row justify-content-center">
 
-            <div  >
-                <h1 class="row justify-content-center m-5 ">My Saved Speeches</h1>
+            <div>
+                <div class="row justify-content-center m-5">
+                    <h2 class="footer">Saved Speeches</h2>
+
+                </div>
                 
 
             {

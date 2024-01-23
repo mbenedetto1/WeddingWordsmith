@@ -46,10 +46,10 @@ img{
     font-family: 'Roboto', sans-serif;
 }
 .header{
-    display: inline-block;
+    display: flex;
     padding-top: 5%;
     font-family:cursive;
-    font-size: 50px;
+    font-size: 100px;
 }
 
 .trash{
@@ -63,8 +63,20 @@ img{
     margin-left: 75vh;
 }
 
+.footer{
+    font-family: cursive;
+    font-size: 50px;
+}
 
 .chat-form{
     margin: auto;
     padding: auto;
+}
+
+.title{
+    
+    font-family: cursive;
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
 }

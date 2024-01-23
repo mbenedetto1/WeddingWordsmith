@@ -20,15 +20,17 @@ const ViewSpeech = () => {
   return (
     <div class="responsive-font-example row justify-content-center m-5 p-5">
         <div>
-            <h2 >Here is that Speech you ordered!</h2>
+            <h2 class="footer">Here is that Speech you ordered!</h2>
         </div>
         <div class="row justify-content-center m-5 p-5">
             <h2>{speech.speechName}</h2>
 
             <p class="p-3">{speech.speechContent}</p>
         </div>
-        <div class="row justify-content-center m-5 p-5">
-            <Link to={`/edit/${id}`} class="btn btn-outline-primary">Edit!</Link>
+        <div class="row justify-content-center">
+            <div class="button">
+                <Link to={`/edit/${id}`} class="btn btn-outline-primary">Edit!</Link>
+            </div>
             
         </div>
     </div>

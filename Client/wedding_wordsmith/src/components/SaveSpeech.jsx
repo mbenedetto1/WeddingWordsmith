@@ -27,6 +27,7 @@ const SaveSpeech = () => {
             console.log(err.response.data.errors)
             setErrors(err.response.data.errors)
         })
+        const [speeches, setSpeeches] = useState([])
     }
 
     useEffect(() => {
@@ -38,29 +39,30 @@ const SaveSpeech = () => {
             console.log(err)
         })
     }, [])
+    const [speeches, setSpeeches] = useState([])
     
 
   return (
     <div>
         <div class="mt-5">
-            <h1 class="row justify-content-center" >Save that Speech!</h1>
+            <h1 class="title" >Save that Speech!</h1>
         </div>
         <div class="row col-5 chat-form">
             <form class="form control form-control-lg" onSubmit={submitHandler}>
-            <label for="speechName">Speech Name:</label>
-                <div>
-                    <input type="text" name="speechName" value={speech.speechName} onChange={changeHandler}/>
-                    <p>{errors.speechName ? errors.speechName.message : ''}</p>
-                </div>
-                <label for="speechContent">Speech:</label>
-                <div>
-                    
-                    <textarea rows='5' cols='33' name="speechContent" value={speech.speechContent} onChange={changeHandler}/>
-                    <p>{errors.speechContent ? errors.speechContent.message : ''}</p>
-                    
-                </div>
-                <input type="submit" value="Save Speech"/>
-            </form>
+                <label for="speechName">Speech Name:</label>
+                    <div>
+                        <input type="text" name="speechName" value={speech.speechName} onChange={changeHandler}/>
+                        {errors.speechName ? <p>{errors.speechName.message }</p> : null}
+                    </div>
+                    <label for="speechContent">Speech:</label>
+                    <div>
+                        
+                        <textarea rows='10' cols='55' name="speechContent" value={speech.speechContent} onChange={changeHandler}/>
+                        {errors.speechContent ? <p>{errors.speechContent.message}</p> : null}
+                        
+                    </div>
+                    <button type='submit'>Save your Speech</button>
+                </form>
         </div>
     </div>
   )

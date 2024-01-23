@@ -16,13 +16,13 @@ function App() {
   return (
     <>
       <div>
-        
+        <Nav/>
         <Routes>
           <Route path='/' element= {<Dashboard/>}/>
           <Route path= '/chat' element= {<ChatGPT/>}/>
           <Route path='/about' element= {<About/>}/>
           <Route path='/speech/:id' element= {<ViewSpeech/>}/>
-          <Route path='/save' element= {<SaveSpeech/>}/>
+          <Route path='/speech/add' element= {<SaveSpeech/>}/>
           <Route path='/edit/:id' element= {<EditSpeech/>}/>
         </Routes>
       </div>
