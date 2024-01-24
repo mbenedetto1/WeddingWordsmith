@@ -15,9 +15,9 @@ require('./config/mongoose.config');
 app.use(express.json(), express.urlencoded({ extended: true }));
 
 
+const api_key = process.env.REACT_APP_OPENAI_API_KEY;
 
-const API_KEY = "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"
-const openai = new OpenAIAPI({apiKey:"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" });
+const openai = new OpenAIAPI({apiKey: api_key});
 
 app.use(bodyParser.json());
 app.use(cors({ origin: 'http://localhost:5173'}));
