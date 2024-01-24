@@ -22,6 +22,7 @@ const ChatGPT = () => {
 
     return (
     <div  >
+        <h1 class="title">Wedding Wordsmith</h1>
         <form class="row justify-content-center p-5 mt-5 form-floating" onSubmit={handleSubmit}>
             <textarea rows="10"class="form-control" placeholder="Type details of your speech here!" value={prompt} onChange={handlePrompt}/>
             <input type="submit" class="btn btn-light btn-lg mt-5"value="Submit" />

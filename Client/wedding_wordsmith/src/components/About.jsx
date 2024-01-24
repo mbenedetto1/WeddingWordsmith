@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
   return (
     <div class="row justify-content-center  p-5 mt-5">
-        <div class='welcome'>
-            <h2>Welcome to Wedding Wordsmith</h2>
+        <div >
+            <h2 class="welcome">Welcome to Wedding Wordsmith</h2> &nbsp;
             <p>We understand that words have the power to move hearts, capture memories, and immortalize moments. Our journey began with a simple mission: to harness this power to help any and every speech writer and ease any burdens that might accompany the pains that endure while writing the perfect speech</p>
         </div>
         <div class= 'mission'>

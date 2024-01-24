@@ -93,6 +93,17 @@ width: fit-content;
     text-align: center;
 }
 
+.welcome{
+    font-family: cursive;
+    
+    justify-content: center;
+    text-align: center;
+}
+
+textarea{
+    border-radius: 5px;
+}
+
 
 
 
